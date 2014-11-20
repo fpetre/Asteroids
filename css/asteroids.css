@@ -1,0 +1,46 @@
+/*reset*/
+
+body, html, canvas, h1, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-style: inherit;
+}
+
+
+/*main*/
+body {
+  font-family: sans-serif;
+  background: black;
+  padding: 50px;
+  font-size: 16px;
+}
+h1 {
+  font-size: 24px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  display: block;
+  padding: 20px;
+}
+
+canvas {
+  display: block;
+  margin: auto;
+}
+
+ul {
+  list-style: none;
+  color: white;
+  text-align: center;
+}
+
+ul > li {
+  padding: 10px;
+}
+
+ul > li:first-child {
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration: underline;  
+}

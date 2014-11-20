@@ -9,13 +9,21 @@
     <script src="lib/bullet.js"></script>
     <script src="lib/game.js"></script>
     <script src="lib/gameView.js"></script>
+    <script src="assets/javascript/underscore-min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/asteroids.css" />
   </head>
 
   <body>
-    <canvas id="game-canvas" width=800 height=600></canvas>
+    <h1> Asteroids </h1>
+    <canvas id="game-canvas" width=1000 height=800></canvas>
+    <ul>
+      <li>Instructions</li>
+      <li>W, A, S, D to move</li>
+      <li>space to fire</li>
+    </ul>
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      var backgroundUrl = "assets/underwater-background.jpg";
+      var backgroundUrl = "assets/space-background.jpg";
       var shipImageUrl = "assets/speedship.png";
       var shipImage = new Image();
       shipImage.src = shipImageUrl;
