@@ -23,15 +23,12 @@
     </ul>
     <script>
       var canvasEl = document.getElementById("game-canvas");
-      var backgroundUrl = "assets/space-background.jpg";
-      var shipImageUrl = "assets/speedship.png";
       var shipImage = new Image();
-      shipImage.src = shipImageUrl;
-      var asteroidUrl = "assets/asteroid.png";
+      shipImage.src = "assets/speedship.png";
       var asteroidImage = new Image();
-      asteroidImage.src = asteroidUrl;
+      asteroidImage.src = "assets/asteroid.png";
       var backgroundImage = new Image();
-      backgroundImage.src = backgroundUrl;
+      backgroundImage.src = "assets/space-background.jpg";
       var images = {asteroid: asteroidImage, background: backgroundImage, ship: shipImage};
       var gameView = new Asteroids.GameView(canvasEl, images);
       gameView.start();
