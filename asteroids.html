@@ -16,15 +16,19 @@
 
   <body>
     <h1> Asteroids </h1>
-    <canvas id="game-canvas" width=1000 height=800></canvas>
+    <div class="canvas-container">
+      <canvas id="game-canvas" width=1000 height=800></canvas>
+      <canvas id="ui-canvas" width=1000 height=800></canvas>
+    </div>
     <ul>
       <li>Instructions</li>
       <li>W, A, S, D to move</li>
       <li>space to fire</li>
     </ul>
     <script>
-      var canvasEl = document.getElementById("game-canvas");
-      var gameView = new Asteroids.GameView(canvasEl);
+      var gameCanvasEl = document.getElementById("game-canvas");
+      var uiCanvasEl = document.getElementById("ui-canvas");
+      var gameView = new Asteroids.GameView(gameCanvasEl, uiCanvasEl);
       gameView.start();
     </script>
   </body>
